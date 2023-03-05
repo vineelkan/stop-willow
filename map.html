@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    </head>
+    <nav>
+        <div class="logo">StopWillow</div>
+        <div class="nav-items">
+            <a href="home.html">Home</a>
+            <a href="impacts.html">Impacts</a>
+            <a href="map.html">Map</a>
+            <a href="help.html">Help</a>
+        </div>
+    </nav>
+    <div class="map-container">
+        <img src="map.jpeg" alt="Alaska Map" usemap ="#mymap" />
+        <div class="map-caption">
+            <figcaption"><i>HOVER OVER EACH REGION TO LEARN MORE ABOUT HOW WILLOW IMPACTS EACH AREA</i></figcaption>
+        </div>
+    </div>
+    <map name="mymap">
+        <area shape="rect" coords="0,0,500,155" id="northern" href=""/>
+        <area shape="rect" coords="275,155,500,250" id="interior" href=""/>
+        <area shape="rect" coords="0,155,350,800" id="southwest" href=""/>
+        <area shape="rect" coords="350,250,520,380" id="southcentral" href=""/>
+        <area shape="rect" coords="500,355,800,500" id="southeast" href=""/>
+    </map>
+    <div id="region-info"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
